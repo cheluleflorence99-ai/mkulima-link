@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farmer Dashboard</title>
+
+<link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+
+    <h2>🌾 Farmer Panel</h2>
+
+    <ul>
+        <li class="active">
+            <a href="farmer_dashboard.html">Dashboard</a>
+        </li>
+
+        <li>
+            <a href="market_prices.html">Market Prices</a>
+        </li>
+
+        <li>
+            <a href="alerts.html">Price Alerts</a>
+        </li>
+
+        <li>
+            <a href="buyer_requests.html">Buyer Requests</a>
+        </li>
+
+        <li>
+            <a href="transport_request.html">Transport</a>
+        </li>
+
+        <li>
+            <a href="forecast.html">Forecast</a>
+        </li>
+
+        <li>
+            <a href="login.html">Logout</a>
+        </li>
+    </ul>
+
+</div>
+
+<!-- Main Content -->
+<div class="main">
+
+    <h1>Farmer Dashboard</h1>
+
+    <!-- Cards -->
+    <div class="cards">
+
+        <div class="card">
+            <h3>Market Prices</h3>
+            <p>15 Markets Updated</p>
+        </div>
+
+        <div class="card">
+            <h3>Buyer Requests</h3>
+            <p>24 Active Requests</p>
+        </div>
+
+        <div class="card">
+            <h3>Transport Providers</h3>
+            <p>8 Available Nearby</p>
+        </div>
+
+        <div class="card">
+            <h3>Forecast Reports</h3>
+            <p>Updated Today</p>
+        </div>
+
+    </div>
+
+    <!-- Recent Prices -->
+    <div class="table-container">
+
+        <h2>Recent Market Prices</h2>
+
+        <br>
+
+        <table>
+
+            <tr>
+                <th>Crop</th>
+                <th>County</th>
+                <th>Price (KES/Kg)</th>
+            </tr>
+
+            <tr>
+                <td>Tomatoes</td>
+                <td>Kiambu</td>
+                <td>80</td>
+            </tr>
+
+            <tr>
+                <td>Beans</td>
+                <td>Nakuru</td>
+                <td>120</td>
+            </tr>
+
+            <tr>
+                <td>Maize</td>
+                <td>Nairobi</td>
+                <td>55</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>

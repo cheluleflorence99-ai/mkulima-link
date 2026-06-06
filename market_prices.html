@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Prices</title>
+
+<link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="sidebar">
+
+    <h2>🌾 Farmer Panel</h2>
+
+    <ul>
+        <li><a href="farmer-dashboard.html">Dashboard</a></li>
+        <li class="active"><a href="market-prices.html">Market Prices</a></li>
+        <li><a href="alerts.html">Price Alerts</a></li>
+        <li><a href="buyer-requests.html">Buyer Requests</a></li>
+        <li><a href="transport-request.html">Transport</a></li>
+        <li><a href="forecast.html">Forecast</a></li>
+    </ul>
+
+</div>
+
+<div class="main">
+
+    <h1>Market Prices</h1>
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search Crop..."
+    >
+
+    <div class="table-container">
+
+        <table id="priceTable">
+
+            <tr>
+                <th>Crop</th>
+                <th>County</th>
+                <th>Price</th>
+            </tr>
+
+            <tr>
+                <td>Tomatoes</td>
+                <td>Kiambu</td>
+                <td>80</td>
+            </tr>
+
+            <tr>
+                <td>Beans</td>
+                <td>Nakuru</td>
+                <td>120</td>
+            </tr>
+
+            <tr>
+                <td>Maize</td>
+                <td>Nairobi</td>
+                <td>55</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="js/prices.js"></script>
+
+</body>
+</html>

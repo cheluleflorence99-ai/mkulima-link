@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Price Alerts</title>
+<link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>🌾 Farmer Panel</h2>
+
+<ul>
+<li><a href="farmer-dashboard.html">Dashboard</a></li>
+<li class="active"><a href="alerts.html">Price Alerts</a></li>
+</ul>
+
+</div>
+
+<div class="main">
+
+<h1>Price Alerts</h1>
+
+<form id="alertForm">
+
+<select>
+<option>Tomatoes</option>
+<option>Beans</option>
+<option>Maize</option>
+</select>
+
+<input
+type="number"
+placeholder="Target Price"
+>
+
+<button>Create Alert</button>
+
+</form>
+
+<br>
+
+<div class="card">
+<h3>Tomatoes</h3>
+<p>Alert at KES 90/Kg</p>
+</div>
+
+<div class="card">
+<h3>Beans</h3>
+<p>Alert at KES 130/Kg</p>
+</div>
+
+</div>
+
+<script src="alerts.js"></script>
+
+</body>
+</html>

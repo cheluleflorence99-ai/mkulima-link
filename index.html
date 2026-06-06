@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Market Linkage</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+
+    <div class="logo">
+        Smart Market Linkage
+    </div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html" class="btn">Register</a></li>
+    </ul>
+
+</nav>
+
+<section class="hero" id="home">
+
+    <h1>Connecting Farmers to Better Markets</h1>
+
+    <p>
+        Real-time crop prices, buyer connections,
+        transport matching and demand forecasting.
+    </p>
+
+    <div class="hero-buttons">
+        <a href="register.html" class="btn">
+            Get Started
+        </a>
+
+        <a href="#features" class="btn-secondary">
+            Learn More
+        </a>
+    </div>
+
+</section>
+
+<section id="features" class="features">
+
+    <h2>Our Features</h2>
+
+    <div class="feature-grid">
+
+        <div class="card">
+            <h3>Market Prices</h3>
+            <p>
+                Access current crop prices across
+                different markets.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Price Alerts</h3>
+            <p>
+                Receive alerts when crop prices
+                hit your target.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Transport Matching</h3>
+            <p>
+                Connect directly with nearby
+                transport providers.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Demand Forecasting</h3>
+            <p>
+                Know which crops are likely to be
+                profitable next season.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="about" class="about">
+
+    <h2>About</h2>
+
+    <p>
+        Smart Market Linkage helps smallholder farmers
+        reduce post-harvest losses by connecting them
+        with buyers and transport providers while
+        providing real-time market information.
+    </p>
+
+</section>
+
+<footer>
+    <p>&copy; 2026 Smart Market Linkage System</p>
+</footer>
+ <script>
+
+document.getElementById('btn').addEventListener('click', async () => {
+    try {
+        const response = await fetch('http://192.168.8.173:5000/api/test');
+        const data = await response.json();
+
+        document.getElementById('result').textContent = data.message;
+    } catch (error) {
+        console.error(error);
+    }
+});
+
+
+    </script>
+</body>
+</html>
